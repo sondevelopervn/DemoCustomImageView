@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b6a417"
+    android:orientation="vertical"
+    tools:context="com.success.sonpham.democustomimageview.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.success.sonpham.democustomimageview.ArcView
+            android:id="@+id/arcView"
+            android:layout_width="450dp"
+            android:layout_height="450dp" android:layout_marginTop="50dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="500dp" android:visibility="visible"
+            android:layout_marginTop="20dp">
+            <com.success.sonpham.democustomimageview.RoundedImageView
+                android:id="@+id/imageView_round"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/profile" android:layout_marginLeft="20dp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="80dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Celebrity"
+                    android:id="@+id/textView"/>
+                <com.success.sonpham.democustomimageview.RoundedImageView
+                    android:id="@+id/imageView_round2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/profile" android:layout_marginLeft="110dp"/>
+            </LinearLayout>
+            <com.success.sonpham.democustomimageview.RoundedImageView
+                android:id="@+id/imageView_round3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="110dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/profile" android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>
